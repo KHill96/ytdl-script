@@ -9,10 +9,10 @@ def main():
 
 if __name__ == "__main__":
     while True:
-        print('Starting...')
-        start = time.perf_counter()
-        main()
-        stop = time.perf_counter()
-        print (f'{stop - start:0.4f} seconds')
-        time.sleep(1800)
-        print('Waiting...')
+    	print ('Starting next run...')
+    	start = time.perf_counter()
+    	main()
+    	stop = time.perf_counter()
+    	print(f'That run took {stop - start:0.4f} seconds')
+    	print('Waiting to start the next run')
+	time.sleep(1800)
