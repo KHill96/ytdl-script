@@ -23,8 +23,9 @@ The merge-output-format is there to ensure that when the command is done merging
 Finally, I tell the command to look to the file archive.txt to save time overwriting videos. I also give it the cookies file (since as of writing this I can't login through YouTube-DL without an error). I tell the command to treat every link as a playlist (since I do have only two links for playlists from one of the channels in list.txt).
 I honestly have no clue how the postprocessor-args helps. I downloaded it to help embed thumbnails but there were issues with ffmpeg and the line just stuck.
 
-###### PS I used the cookies.txt extension for chrome to download the cookies for my login info on YouTube.
+###### PS I used the cookies.txt extension for chrome to download the cookies for the login info I'm using on YouTube.
 
 That's my script. I've included the .py file to run it and the .txt file containing what channels and playlists I wanted to archive.
 
-### Thanks!
+### TODO:
+Multithreaded commands for each channel's playlists and uploads.
