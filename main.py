@@ -15,7 +15,7 @@ class AnatomyOfAFighterLogger():
 	def warning(self,msg):
 		print('[Anatomy of a Fighter] ' + msg)
 	def error(self,msg):
-		print('[Anatomy of a Fighter]' + msg)
+		print('[Anatomy of a Fighter] ' + msg)
 
 class BernardoFariaLogger():
 	def debug(self,msg):
@@ -23,7 +23,7 @@ class BernardoFariaLogger():
 	def warning(self,msg):
 		print('[Bernardo Faria] ' + msg)
 	def error(self,msg):
-		print('[Bernardo Faria]' + msg)
+		print('[Bernardo Faria] ' + msg)
 	
 class BobRossLogger():
 	def debug(self,msg):
@@ -31,7 +31,7 @@ class BobRossLogger():
 	def warning(self,msg):
 		print('[Bob Ross] ' + msg)
 	def error(self,msg):
-		print('[Bob Ross]' + msg)
+		print('[Bob Ross] ' + msg)
 
 
 class BoxingLegendsLogger():
@@ -40,7 +40,7 @@ class BoxingLegendsLogger():
 	def warning(self,msg):
 		print('[BLTV] ' + msg)
 	def error(self,msg):
-		print('[BLTV]' + msg)
+		print('[BLTV] ' + msg)
 
 class ClothMapLogger():
 	def debug(self,msg):
@@ -48,7 +48,7 @@ class ClothMapLogger():
 	def warning(self,msg):
 		print('[Cloth Map] ' + msg)
 	def error(self,msg):
-		print('[Cloth Map]' + msg)
+		print('[Cloth Map] ' + msg)
 
 class FallOfCivilizationsLogger():
 	def debug(self,msg):
@@ -56,7 +56,7 @@ class FallOfCivilizationsLogger():
 	def warning(self,msg):
 		print('[Fall of Civilizations] ' + msg)
 	def error(self,msg):
-		print('[Fall of Civilizations]' + msg)
+		print('[Fall of Civilizations] ' + msg)
 
 class FireOfLearningLogger():
 	def debug(self,msg):
@@ -64,7 +64,7 @@ class FireOfLearningLogger():
 	def warning(self,msg):
 		print('[Fire of Learning] ' + msg)
 	def error(self,msg):
-		print('[Fire of Learning]' + msg)
+		print('[Fire of Learning] ' + msg)
 
 class FloGrapplingLogger():
 	def debug(self,msg):
@@ -72,7 +72,7 @@ class FloGrapplingLogger():
 	def warning(self,msg):
 		print('[FloGrappling] ' + msg)
 	def error(self,msg):
-		print('[FloGrappling]' + msg)
+		print('[FloGrappling] ' + msg)
 
 class FreeDawkinsLogger():
 	def debug(self,msg):
@@ -80,7 +80,7 @@ class FreeDawkinsLogger():
 	def warning(self,msg):
 		print('[FreeDawkins] ' + msg)
 	def error(self,msg):
-		print('[FreeDawkins]' + msg)
+		print('[FreeDawkins] ' + msg)
 
 class HBOBoxingLogger():
 	def debug(self,msg):
@@ -88,7 +88,7 @@ class HBOBoxingLogger():
 	def warning(self,msg):
 		print('[HBO Boxing] ' + msg)
 	def error(self,msg):
-		print('[HBO Boxing]' + msg)
+		print('[HBO Boxing] ' + msg)
 
 class IAmTheBayLogger():
 	def debug(self,msg):
@@ -96,7 +96,7 @@ class IAmTheBayLogger():
 	def warning(self,msg):
 		print('[iAmTheBay] ' + msg)
 	def error(self,msg):
-		print('[iAmTheBay]' + msg)
+		print('[iAmTheBay] ' + msg)
 
 class MetamorisLogger():
 	def debug(self,msg):
@@ -104,7 +104,7 @@ class MetamorisLogger():
 	def warning(self,msg):
 		print('[Metamoris] ' + msg)
 	def error(self,msg):
-		print('[Metamoris]' + msg)
+		print('[Metamoris] ' + msg)
 
 class MixedMollyWhopperyLogger():
 	def debug(self,msg):
@@ -112,7 +112,16 @@ class MixedMollyWhopperyLogger():
 	def warning(self,msg):
 		print('[Mixed Molly Whoppery] ' + msg)
 	def error(self,msg):
-		print('[Mixed Molly Whoppery]' + msg)
+		print('[Mixed Molly Whoppery] ' + msg)
+
+class MontageKingLogger():
+    def debug(self,msg):
+        pass
+    def warning(self,msg):
+        print('[Montage King MMA] ' + msg)
+    def error(self,msg):
+        print('[Montage King MMA] ' + msg)
+
 
 class NoClipLogger():
 	def debug(self,msg):
@@ -120,7 +129,7 @@ class NoClipLogger():
 	def warning(self,msg):
 		print('[No Clip] ' + msg)
 	def error(self,msg):
-		print('[No Clip]' + msg)
+		print('[No Clip] ' + msg)
 
 class ONEChampionshipLogger():
 	def debug(self,msg):
@@ -128,7 +137,7 @@ class ONEChampionshipLogger():
 	def warning(self,msg):
 		print('[ONE Championship] ' + msg)
 	def error(self,msg):
-		print('[ONE Championship]' + msg)
+		print('[ONE Championship] ' + msg)
 
 class RunThroughTheTapeLogger():
 	def debug(self,msg):
@@ -136,7 +145,7 @@ class RunThroughTheTapeLogger():
 	def warning(self,msg):
 		print('[Run Through the Tape] ' + msg)
 	def error(self,msg):
-		print('[Run Through the Tape]' + msg)
+		print('[Run Through the Tape] ' + msg)
 
 class UFCLogger():
 	def debug(self,msg):
@@ -144,7 +153,7 @@ class UFCLogger():
 	def warning(self,msg):
 		print('[UFC] ' + msg)
 	def error(self,msg):
-		print('[UFC]' + msg)
+		print('[UFC] ' + msg)
 
 class UFCEspanolLogger():
 	def debug(self,msg):
@@ -305,6 +314,20 @@ ydl_opts_mixed_molly_whoppery ={
 	'outtmpl':'%(playlist_uploader)s/%(title)s - %(upload_date)s.%(ext)s',
 }
 
+ydl_opts_montage_king_mma  ={
+        'format':"(bestvideo[vcodec^=av01][height>=1080][fps>30][ext=mp4]/bestvideo[vcodec=vp9.2][height>=1080][fps>30][ext=mp4]/bestvideo[vcodec=vp9][height>=1080][fps>30][ext=mp4]/bestvideo[vcodec^=av01][height>=1080][ext=mp4]/bestvideo[vcodec=vp9.2][height>=1080][ext=mp4]/bestvideo[vcodec=vp9][height>=1080][ext=mp4]/bestvideo[height>=1080][ext=mp4]/bestvideo[vcodec^=av01][height>=720][fps>30][ext=mp4]/bestvideo[vcodec=vp9.2][height>=720][fps>30][ext=mp4]/bestvideo[vcodec=vp9][height>=720][fps>30][ext=mp4]/bestvideo[vcodec^=av01][height>=720][ext=mp4]/bestvideo[vcodec=vp9.2][height>=720][ext=mp4]/bestvideo[vcodec=vp9][height>=720][ext=mp4]/bestvideo[height>=720][ext=mp4]/bestvideo)+(bestaudio[acodec=opus]/bestaudio)/best",
+        'ignoreerrors':True,
+        'merge_output_format':'mkv',
+        'download_archive':'archive.txt',
+        'cookiefile':'cookies.txt',
+        'geo_bypass':True,
+        'logger':MontageKingLogger(),
+        'outtmpl':'%(playlist_uploader)s/%(title)s - %(upload_date)s.%(ext)s',
+}
+
+
+
+
 ydl_opts_no_clip ={
 	'format':"(bestvideo[vcodec^=av01][height>=1080][fps>30][ext=mp4]/bestvideo[vcodec=vp9.2][height>=1080][fps>30][ext=mp4]/bestvideo[vcodec=vp9][height>=1080][fps>30][ext=mp4]/bestvideo[vcodec^=av01][height>=1080][ext=mp4]/bestvideo[vcodec=vp9.2][height>=1080][ext=mp4]/bestvideo[vcodec=vp9][height>=1080][ext=mp4]/bestvideo[height>=1080][ext=mp4]/bestvideo[vcodec^=av01][height>=720][fps>30][ext=mp4]/bestvideo[vcodec=vp9.2][height>=720][fps>30][ext=mp4]/bestvideo[vcodec=vp9][height>=720][fps>30][ext=mp4]/bestvideo[vcodec^=av01][height>=720][ext=mp4]/bestvideo[vcodec=vp9.2][height>=720][ext=mp4]/bestvideo[vcodec=vp9][height>=720][ext=mp4]/bestvideo[height>=720][ext=mp4]/bestvideo)+(bestaudio[acodec=opus]/bestaudio)/best",
 	'ignoreerrors':True,
@@ -439,6 +462,10 @@ def append_threads():
 	# Mixed Molly Whoppery
 	thread_mixed_molly_whoppery = threading.Thread(target=download,args=('[Mixed Molly Whoppery]',ydl_opts_mixed_molly_whoppery,['https://www.youtube.com/c/MollyWhopMMA/'],1200))
 	thread_list.append(thread_mixed_molly_whoppery)
+    
+	# Montage King MMA
+	thread_montage_king_mma = threading.Thread(target=download,args=('[Montage King MMA]',ydl_opts_montage_king_mma,['https://www.youtube.com/c/TheMontageKing/videos'],1200))
+	thread_list.append(thread_montage_king_mma)
 
 	# NoClip
 	thread_no_clip = threading.Thread(target=download,args=('[NoClip]',ydl_opts_no_clip,['https://www.youtube.com/c/NoclipVideo/playlists','https://www.youtube.com/c/NoclipVideo'],1200))
