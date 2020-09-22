@@ -88,7 +88,7 @@ class HBOBoxingLogger():
 	def warning(self,msg):
 		print('[HBO Boxing] ' + msg)
 	def error(self,msg):
-		print('[BO Boxing]' + msg)
+		print('[HBO Boxing]' + msg)
 
 class IAmTheBayLogger():
 	def debug(self,msg):
