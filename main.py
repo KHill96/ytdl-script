@@ -33,7 +33,6 @@ class BobRossLogger():
 	def error(self,msg):
 		print('[Bob Ross] ' + msg)
 
-
 class BoxingLegendsLogger():
 	def debug(self,msg):
 		pass
@@ -358,7 +357,7 @@ ydl_opts_run_through_the_tape ={
 	'cookiefile':'cookies.txt',
 	'geo_bypass':True,
 	'logger':RunThroughTheTapeLogger(),
-	'outtmpl':'/%(playlist)s/%(title)s - %(upload_date)s.%(ext)s',
+	'outtmpl':os.getcwd()+'/Inside the NBA/%(playlist)s/%(title)s - %(upload_date)s.%(ext)s',
 }
 
 ydl_opts_ufc ={
@@ -398,11 +397,12 @@ ydl_opts_vet_ranch ={
 
 # I had two different functions that I combined to 1
 def download(channel_tag ,dl_opts, links, sleep_length):
-	print (channel_tag + ' Starting next run...')
-	with youtube_dl.YoutubeDL(dl_opts) as ydl:
-		ydl.download(links)
-	print(channel_tag + ' Waiting to start next run')
-	time.sleep(sleep_length)
+	while(True):
+		print (channel_tag + ' Starting next run...')
+		with youtube_dl.YoutubeDL(dl_opts) as ydl:
+			ydl.download(links)
+		print(channel_tag + ' Waiting to start next run')
+		time.sleep(sleep_length)
 
 thread_list =[]
 
