@@ -21,5 +21,5 @@ Any questions just hit me up.
 
 #### PS There's a bunch of errors for HBO Boxing because of the fact they privated so much of their content. And the UFC Espanol has some videos that don't download even though I have geo_bypass set to True. Might be an iusse with my understanding of it.
 
-
-KH
+#### TODO: 
+Add indefinite while loops to utilize the sleep function after the first run through on my machine.
